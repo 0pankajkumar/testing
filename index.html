@@ -22,7 +22,7 @@
 
     <script>
       $(function(){
-      var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1-of7dYLwSAXdJXydtUjn3NeUbsbqeSQ2U8d7_oMUSYo/1/public/full?alt=json';
+      var sheetUrl = 'http://cors.io/?https://spreadsheets.google.com/feeds/cells/1-of7dYLwSAXdJXydtUjn3NeUbsbqeSQ2U8d7_oMUSYo/1/public/full?alt=json';
       $.getJSON(sheetUrl, function(data){
         var entry = data.feed.entry;
         console.log(entry);
